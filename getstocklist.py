@@ -5,7 +5,7 @@ import sqlite3
 
 conn = sqlite3.connect('stock.db')
 c = conn.cursor()
-# c.execute('''CREATE TABLE stocks
+#c.execute('''CREATE TABLE stocks
 #	(name, number, date, open, high, low, close, volume, adj close)''')
 
 data = request.urlopen('http://bbs.10jqka.com.cn/codelist.html#sh')
